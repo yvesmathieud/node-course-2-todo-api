@@ -35,7 +35,7 @@ Todo.findById(id).then((todo) => {
 
 User.findById(id).then((user) => {
     if (!user) {
-        return console.log('Id not found');
+        return console.log('Unable to find user');
     }
     console.log('User By Id', JSON.stringify(user, undefined, 2));
 }).catch((e) => console.log(e));
